@@ -20,37 +20,54 @@
 </nav>
 
 <h1>Commands</h1>
+<section>
+    <h2 id="utilities">
+        <span>Utilities</span>
+        <small><a href="#utilities">🔗</a></small>
+    </h2>
+    <form action="#" name="makeCommand">
+        <h3 id="makeCommand">
+            <span>Make Command</span>
+            <small><a href="#makeCommand">🔗</a></small>
+        </h3>
+        <label for="makeInput">Input</label>
+        <br>
+        <input id="makeInput" type="text" name="make">
 
-<h2 id="makeCommand">Make Command</h2>
-<form action="#" name="makeCommand">
-    <label for="makeInput">Input</label>
-    <br>
-    <input id="makeInput" type="text" name="make">
+        <br>
+        <label>Command output:
+            <code>
+                <output id="makeOutput"><></output>
+            </code>
+        </label>
+    </form>
+</section>
 
-    <br>
-    <label>Command output:
-        <code>
-            <output id="makeOutput"><></output>
-        </code>
-    </label>
-</form>
+<section>
+    <h2 id="throttleCommands">
+        <span>Throttle Commands</span>
+        <small><a href="#throttleCommands">🔗</a></small>
+    </h2>
+    <h3 id="throttleCommand">
+        <span>Throttle</span>
+        <small><a href="#throttleCommand">🔗</a></small>
+    </h3>
+    <form action="#" name="throttleCommand">
+        <label for="cabInput">CAB Number</label>
+        <br>
+        <input id="cabInput" type="number" name="cab">
+        <br>
+        <label for="speedInput">Speed</label>
+        <br>
+        <input id="speedInput" type="number" name="speed" value="0" min="-1" max="126">
 
-<h2 id="throttleCommand">Throttle Command</h2>
-<form action="#" name="throttleCommand">
-    <label for="cabInput">CAB Number</label>
-    <br>
-    <input id="cabInput" type="number" name="cab">
-    <br>
-    <label for="speedInput">Speed</label>
-    <br>
-    <input id="speedInput" type="number" name="speed" value="0" min="-1" max="126">
-
-    <br>
-    <label>Command output:
-        <code>
-            <output id="throttleOutput"><></output>
-        </code>
-    </label>
-</form>
+        <br>
+        <label>Command output:
+            <code>
+                <output id="throttleOutput"><></output>
+            </code>
+        </label>
+    </form>
+</section>
 </body>
 </html>
