@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DCC-EC Commands Demo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+<h1>Commands</h1>
+
+<h2 id="makeCommand">Make Command</h2>
+<form action="#" name="makeCommand">
+    <label for="makeInput">Input</label>
+    <br>
+    <input id="makeInput" type="text" name="make">
+
+    <br>
+    <code>
+        <output id="makeOutput"><></output>
+    </code>
+</form>
+
+<h2 id="throttleCommand">Throttle Command</h2>
+<form action="#" name="throttleCommand">
+    <label for="cabInput">CAB Number</label>
+    <br>
+    <input id="cabInput" type="number" name="cab">
+    <br>
+    <label for="speedInput">Speed</label>
+    <br>
+    <input id="speedInput" type="number" name="speed" value="0" min="-1" max="126">
+
+    <br>
+    <code>
+        <output id="throttleOutput"><></output>
+    </code>
+</form>
+</body>
+</html>
