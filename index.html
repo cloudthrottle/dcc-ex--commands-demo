@@ -30,6 +30,7 @@
             <span>Make Command</span>
             <small><a href="#makeCommand">🔗</a></small>
         </h3>
+
         <label for="makeInput">Input</label>
         <br>
         <input id="makeInput" type="text" name="make">
@@ -48,11 +49,13 @@
         <span>Throttle Commands</span>
         <small><a href="#throttleCommands">🔗</a></small>
     </h2>
-    <h3 id="throttleCommand">
-        <span>Throttle</span>
-        <small><a href="#throttleCommand">🔗</a></small>
-    </h3>
+
     <form action="#" name="throttleCommand">
+        <h3 id="throttleCommand">
+            <span>Throttle</span>
+            <small><a href="#throttleCommand">🔗</a></small>
+        </h3>
+
         <label for="cabInput">CAB Number</label>
         <br>
         <input id="cabInput" type="number" name="cab">
@@ -65,6 +68,19 @@
         <label>Command output:
             <code>
                 <output id="throttleOutput"><></output>
+            </code>
+        </label>
+    </form>
+
+    <form action="#" name="emergencyStopCommand">
+        <h3 id="emergencyStopCommand">
+            <span>Emergency Stop</span>
+            <small><a href="#emergencyStopCommand">🔗</a></small>
+        </h3>
+
+        <label>Command output:
+            <code>
+                <output id="emergencyStopOutput"><></output>
             </code>
         </label>
     </form>
