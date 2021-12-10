@@ -1,5 +1,6 @@
 button:enabled[data-pressed="true"] {
     opacity: 0.8;
+    background: var(--accent-light);
 }
 
 .function-buttons {
