@@ -8,6 +8,8 @@
     <title>DCC-EC Commands Demo</title>
 
     <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
     <script type="module" src="js/main.js"></script>
 </head>
 <body>
@@ -84,6 +86,32 @@
             </code>
         </label>
     </form>
+</section>
+
+<section>
+    <h2 id="cabCommands">
+        <span>Cab Commands</span>
+        <small><a href="#cabCommands">🔗</a></small>
+    </h2>
+
+    <form name="function-buttons" id="function-buttons" class="function-buttons">
+        <h3 id="cabFunctions" class="span-columns">
+            <span>Cab Functions</span>
+            <small><a href="#cabFunctions">🔗</a></small>
+        </h3>
+
+        <label class="span-columns sticky-top">Command output:
+            <code>
+                <output id="cabCommandOutput"><></output>
+            </code>
+        </label>
+    </form>
+
+    <template id="function-button-template">
+        <button type="button" name="functionKey" value="0">
+            F0
+        </button>
+    </template>
 </section>
 </body>
 </html>
