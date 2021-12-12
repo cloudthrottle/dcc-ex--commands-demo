@@ -3,8 +3,13 @@ import {throttleCommand} from 'https://cdn.skypack.dev/@cloudthrottle/dcc-ex--co
 const throttleCommandForm = document.forms.namedItem("throttleCommand")
 
 const updateOutput = () => {
-    const {cabInput: {value: cab}, speedInput: {value: speed}, throttleOutput} = throttleCommandForm.elements
-    throttleOutput.value = throttleCommand({cab, speed})
+    const {
+        cabInput: {value: cab},
+        speedInput: {value: speed},
+        directionInput: {value: direction},
+        throttleOutput
+    } = throttleCommandForm.elements
+    throttleOutput.value = throttleCommand({cab, speed, direction})
 };
 
 throttleCommandForm.addEventListener("change", updateOutput)
