@@ -93,6 +93,7 @@
             </code>
         </label>
     </form>
+
 </section>
 
 <section>
@@ -119,6 +120,46 @@
             F0
         </button>
     </template>
+</section>
+
+<section>
+    <h2 id="powerCommands">
+        <span>Power Commands</span>
+        <small><a href="#powerCommands">🔗</a></small>
+    </h2>
+
+    <form action="#" name="powerCommand">
+        <h3 id="powerCommand">
+            <span>Power Command</span>
+            <small><a href="#powerCommand">🔗</a></small>
+        </h3>
+
+        <label for="powerInput">Power</label>
+        <br>
+        <select id="powerInput" name="power">
+            <option value="1" selected>On</option>
+            <option value="0">Off</option>
+        </select>
+
+        <br>
+
+        <label for="trackInput">Track</label>
+        <br>
+        <select id="trackInput" name="track">
+            <option value="">--Track--</option>
+            <option value="MAIN">Main</option>
+            <option value="PROG">Programming</option>
+            <option value="JOIN">Join</option>
+        </select>
+
+        <br>
+
+        <label>Command output:
+            <code>
+                <output id="powerOutput"><></output>
+            </code>
+        </label>
+    </form>
 </section>
 </body>
 </html>
