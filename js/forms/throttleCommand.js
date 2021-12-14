@@ -7,8 +7,10 @@ const updateOutput = () => {
         cabInput: {value: cab},
         speedInput: {value: speed},
         directionInput: {value: direction},
-        throttleOutput
+        throttleOutput,
+        speedOutput
     } = throttleCommandForm.elements
+    speedOutput.value = speed
     throttleOutput.value = throttleCommand({cab, speed, direction})
 };
 

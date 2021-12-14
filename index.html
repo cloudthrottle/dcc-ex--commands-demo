@@ -62,13 +62,16 @@
         <br>
         <input id="cabInput" type="number" name="cab">
         <br>
-        <label for="speedInput">Speed</label>
+        <label for="speedInput">
+            <span>Speed</span>
+            <output name="speedOutput" for="speedInput"></output>
+        </label>
         <br>
-        <input id="speedInput" type="number" name="speed" value="0" min="-1" max="126">
+        <input id="speedInput" type="range" name="speed" value="0" min="-1" max="126" step="1">
         <br>
         <label for="directionInput">Direction</label>
         <br>
-        <select id="directionInput"  name="direction">
+        <select id="directionInput" name="direction">
             <option value="1" selected>Forward</option>
             <option value="0">Reverse</option>
         </select>
